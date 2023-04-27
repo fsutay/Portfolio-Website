@@ -1,0 +1,211 @@
+h1, h2, h5 {
+    font-weight: 700;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+a {
+    text-decoration: none;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+.text-brand {
+    color: #f83691;
+}
+.section-title {
+    max-width: 560px;
+    margin: 0 auto 60px auto;
+}
+.section-padding {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.section-connector {
+    position: relative;
+}
+.section-connector::after {
+    content: '';
+    width: 2px;
+    height: 100px;
+    background-color: #f83691;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+}
+.navbar {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    transition: all .6s cubic-bezier(.165, .84, .44, 1);
+}
+.navbar.scrolled {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: white;
+    color: black !important;
+}
+.navbar-nav .nav-link {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #f83691;
+}
+.navbar-brand {
+    font-weight: 500;
+    font-size: 28px !important;
+}
+/* home */
+.get-connect {
+    border: 1px solid;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 24px;
+    color: white;
+    font-weight: 500;
+    background-color: #f83691;
+}
+.get-connect:hover {
+    color: #f83691;
+    background-color: white;
+    border: 1px solid #f83691;
+    transition: all .8s ease;
+}
+#home {
+    background-image: url("./img/home-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.skills {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+.skill-name {
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+    margin: 20px 0;
+}
+.skill-bar {
+    height: 14px;
+    border-radius: 3px;
+}
+.skill-per {
+    height: 14px;
+    background-color: #f83691;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+.skill-per::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX((50%));
+}
+.skill-per::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    top: -20px;
+    right: 0;
+    transform: translateX((60%))rotate(45deg);
+    border-radius: 2px;
+}
+@keyframes fillBars {
+    from {
+        width: 0;
+   }
+    to {
+        width: 100%;
+   }
+}
+#contact input.form-control {
+    height: 44px;
+}
+@media (max-width:995px) {
+    .navbar {
+        background-color: rgb(235, 235, 235);
+        text-align: center;
+   }
+}
+.card-wrapper {
+    position: relative;
+}
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+.card-wrapper:hover .overlay {
+    opacity: 1;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 12px;
+    right: 0;
+    width: 97%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #0404059e;
+    border-radius: 3px;
+}
+.carousel-item img {
+    width:100%;
+    height:100%;
+}
+.modal-link{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.modal-title h2{
+    text-align: center;
+}
+@media screen and (max-width:768px){
+    .overlay{
+        width:95%;
+   }
+}
+@media screen and (min-width:768px){
+    .overlay{
+        width:96%;
+   }
+}
+@media screen and (min-width:992px) {
+    .carousel-item img {
+        min-height: 600px;
+   }
+    .modal-content{
+        height: 700px;
+   }
+}
+.modal-list span{
+    margin-right: 5px;
+    font-weight:700;
+    font-size:17px;
+}
+.modal-list a{
+    text-decoration: none;
+    color: #f83691;
+    font-weight:600;
+}
+.modal-list li{
+    font-size: 14px;
+}
+.modal p,.modal-list li{
+    font-size: 14px;
+}
+.project-details{
+    font-weight:600;
+}
